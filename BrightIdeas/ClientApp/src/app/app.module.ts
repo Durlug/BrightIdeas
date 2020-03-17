@@ -15,6 +15,11 @@ import { ProjectComponent } from './project/project.component';
 import { CreateProfileComponent } from './user-profile/create-profile.component';
 import { LoginComponent } from './user-profile/login.component';
 import { UserPasswordComponent } from './user-profile/user-password.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { AdminNavComponent } from './admin-nav/admin-nav.component';
+
+import bootstrap from "bootstrap";
+
 
 @NgModule({
   declarations: [
@@ -28,7 +33,9 @@ import { UserPasswordComponent } from './user-profile/user-password.component';
     CreateProfileComponent,
     LoginComponent,
     UserPasswordComponent,
-    ProjectComponent
+    ProjectComponent,
+    AdminHomeComponent,
+    AdminNavComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -43,7 +50,8 @@ import { UserPasswordComponent } from './user-profile/user-password.component';
       { path: 'create-profile', component: CreateProfileComponent },
       { path: 'login', component: LoginComponent },
       { path: 'password', component: UserPasswordComponent },
-      { path: 'project', component: ProjectComponent }
+      { path: 'project', component: ProjectComponent },
+      { path: 'admin-home', component: AdminHomeComponent}
     ])
   ],
   providers: [],
