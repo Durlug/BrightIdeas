@@ -18,7 +18,11 @@ import { UserPasswordComponent } from './user-profile/user-password.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminNavComponent } from './admin-nav/admin-nav.component';
 
-import bootstrap from "bootstrap";
+//import bootstrap from "bootstrap";
+import { PendingIdeasComponent } from './pending-ideas/pending-ideas.component';
+import { ReportsComponent } from './reports/reports.component';
+import { PendingIdeasDetailsComponent } from './pending-ideas-details/pending-ideas-details.component';
+import { ReportsDetailsComponent } from './reports-details/reports-details.component';
 
 
 @NgModule({
@@ -35,7 +39,11 @@ import bootstrap from "bootstrap";
     UserPasswordComponent,
     ProjectComponent,
     AdminHomeComponent,
-    AdminNavComponent
+    AdminNavComponent,
+    PendingIdeasComponent,
+    ReportsComponent,
+    PendingIdeasDetailsComponent,
+    ReportsDetailsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -51,7 +59,11 @@ import bootstrap from "bootstrap";
       { path: 'login', component: LoginComponent },
       { path: 'password', component: UserPasswordComponent },
       { path: 'project', component: ProjectComponent },
-      { path: 'admin-home', component: AdminHomeComponent}
+      { path: 'admin-home', component: AdminHomeComponent},
+      { path: 'pending-ideas', component: PendingIdeasComponent},
+      { path: 'reports', component: ReportsComponent},
+      { path: 'pending-ideas-details', component: PendingIdeasDetailsComponent},
+      { path: 'reports-details', component: ReportsDetailsComponent}
     ])
   ],
   providers: [],
