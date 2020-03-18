@@ -23,6 +23,9 @@ import { PendingIdeasComponent } from './pending-ideas/pending-ideas.component';
 import { ReportsComponent } from './reports/reports.component';
 import { PendingIdeasDetailsComponent } from './pending-ideas-details/pending-ideas-details.component';
 import { ReportsDetailsComponent } from './reports-details/reports-details.component';
+import { ReportFormComponent } from './report-form/report-form.component';
+import { ReportUserFormComponent } from './report-user-form/report-user-form.component';
+import { ReportDetailsUserComponent } from './report-details-user/report-details-user.component';
 
 
 @NgModule({
@@ -43,7 +46,10 @@ import { ReportsDetailsComponent } from './reports-details/reports-details.compo
     PendingIdeasComponent,
     ReportsComponent,
     PendingIdeasDetailsComponent,
-    ReportsDetailsComponent
+    ReportsDetailsComponent,
+    ReportFormComponent,
+    ReportUserFormComponent,
+    ReportDetailsUserComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -63,7 +69,10 @@ import { ReportsDetailsComponent } from './reports-details/reports-details.compo
       { path: 'pending-ideas', component: PendingIdeasComponent},
       { path: 'reports', component: ReportsComponent},
       { path: 'pending-ideas-details', component: PendingIdeasDetailsComponent},
-      { path: 'reports-details', component: ReportsDetailsComponent}
+      { path: 'reports-details', component: ReportsDetailsComponent},
+      { path: 'report-form', component: ReportFormComponent},
+      { path: 'report-user-form', component: ReportUserFormComponent},
+      { path: 'report-details-user', component: ReportDetailsUserComponent}
     ])
   ],
   providers: [],
