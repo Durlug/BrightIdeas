@@ -10,5 +10,7 @@ namespace BrightIdeas.Models
         public int IdeaId { get; set; }
         [Required]
         public int FollowerUserId { get; set; }
+
+        public User User { get; set; }
     }
 }

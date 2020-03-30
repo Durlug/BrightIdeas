@@ -11,5 +11,8 @@ namespace BrightIdeas.Models
         public int MessageId { get; set; }
         [Required]
         public int UserId { get; set; }
+
+        public Message Message { get; set; }
+        public User User { get; set; }
     }
 }

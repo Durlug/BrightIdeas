@@ -6,7 +6,7 @@ namespace BrightIdeas.Models
     public class UserProfile
     {
         [Key]
-        public int ProfileId { get; set; }
+        public int UserProfileId { get; set; }
         [Required]
         public string Picture { get; set; }
         [Required]

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BrightIdeas.Models
 {
@@ -11,8 +12,10 @@ namespace BrightIdeas.Models
 		[Required]
 		public string Description { get; set; }
 		[Required]
+		[ForeignKey("CreatorUser")]
 		public int CreatorUserId { get; set; }
 		[Required]
+		[ForeignKey("LeaderUser")]
 		public int LeaderUserId { get; set; }
 		[Required]
 		public int MediaId { get; set; }
@@ -21,6 +24,10 @@ namespace BrightIdeas.Models
 		[Required]
 		public DateTime DateTime { get; set; }
 		[Required]
+		public User CreatorUser { get; set; }
+		public User LeaderUser { get; set; }
+		public Media Media { get; set; }
+		public Update Update { get; set; }
 		public ICollection<ToDo> ToDoList { get; set; }
 		[Required]
 		public ICollection<Member> IdeaMembers { get; set; }

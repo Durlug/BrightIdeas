@@ -15,5 +15,10 @@ namespace BrightIdeas.Models
         public int IdeaId { get; set; }
         [Required]
         public int MemberLevel { get; set; }
+
+        public User User { get; set; }
+
+        public Role Role { get; set; }
+        public Idea Idea { get; set; }
     }
 }

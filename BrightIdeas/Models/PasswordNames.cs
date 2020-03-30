@@ -14,5 +14,8 @@ namespace BrightIdeas.Models
         public string Name { get; set; }
         [Required]
         public int CredientialId { get; set; }
+
+        public Crediential Crediential { get; set; }
+
     }
 }

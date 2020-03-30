@@ -48,7 +48,7 @@ namespace BrightIdeas.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUserProfile(int id, UserProfile userProfile)
         {
-            if (id != userProfile.ProfileId)
+            if (id != userProfile.UserProfileId)
             {
                 return BadRequest();
             }
@@ -83,7 +83,7 @@ namespace BrightIdeas.Controllers
             _context.UserProfiles.Add(userProfile);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetUserProfile), new { id = userProfile.ProfileId }, userProfile);
+            return CreatedAtAction(nameof(GetUserProfile), new { id = userProfile.UserProfileId }, userProfile);
         }
 
         // DELETE: api/UserProfiles/5
@@ -104,7 +104,7 @@ namespace BrightIdeas.Controllers
 
         private bool UserProfileExists(int id)
         {
-            return _context.UserProfiles.Any(e => e.ProfileId == id);
+            return _context.UserProfiles.Any(e => e.UserProfileId == id);
         }
     }
 }
