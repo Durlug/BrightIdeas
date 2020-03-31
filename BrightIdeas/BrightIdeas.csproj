@@ -36,10 +36,42 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\create-idea\create-idea.component.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Chat.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Crediential.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Idea.ts" />
+    <None Remove="ClientApp\src\app\shared\models\IdeaFollower.ts" />
+    <None Remove="ClientApp\src\app\shared\models\IdeaReport.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Media.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Member.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Message.ts" />
+    <None Remove="ClientApp\src\app\shared\models\PasswordNames.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Posting.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Role.ts" />
+    <None Remove="ClientApp\src\app\shared\models\ToDo.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Update.ts" />
+    <None Remove="ClientApp\src\app\shared\models\User.ts" />
+    <None Remove="ClientApp\src\app\shared\models\UserProfile.ts" />
+    <None Remove="ClientApp\src\app\shared\models\UserReport.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\create-idea\create-idea.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Chat.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Crediential.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Idea.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\IdeaFollower.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\IdeaReport.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Media.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Member.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Message.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\PasswordNames.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Posting.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Role.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\ToDo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Update.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\User.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\UserProfile.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\UserReport.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
