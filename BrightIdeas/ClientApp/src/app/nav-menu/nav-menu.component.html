@@ -1,52 +1,40 @@
 <header>
-  <nav
-    class="navbar navbar-expand-sm navbar-toggleable-sm customNavBar border-bottom box-shadow mb-3"
-  >
-    <div class="container">
-      <a class="navbar-brand homeButton" [routerLink]="['/']">BrightIdeas</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        aria-label="Toggle navigation"
-        [attr.aria-expanded]="isExpanded"
-        (click)="toggle()"
-      >
-        <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"><span class="navItemOrange"><strong>BRIGHT</strong></span><strong>IDEAS</strong></a>
+    <form class="form-inline flex-nowrap bg-dark mx-0 mx-lg-auto rounded p-1">
+      <input class="form-control ml-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button type="submit" class="btn btn-outline-light">
+        Search
       </button>
-      <div
-        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
-        [ngClass]="{ show: isExpanded }"
-      >
-        <ul class="navbar-nav flex-grow">
-          <li
-            class="nav-item"
+    </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+            arial-contorls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"
             [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            <a class="nav-link text-dark" [routerLink]="['/']"></a>
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link navItemOrange" [routerLink]="['/create-idea']"
-              >Create Idea</a
-            >
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link navItemWhite" [routerLink]="['/project']"
-              >Project List</a
-            >
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link navItemOrange" [routerLink]="['/messages']"
-               >Messages</a>
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link navItemWhite" [routerLink]="['user-profile']"
-               >User Profile</a>
-          </li>
-        </ul>
-      </div>
+            [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link text-dark" [routerLink]="['/']"></a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link" [routerLink]="['/create-idea']"><span class="navItemOrange">Create Idea</span></a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link" [routerLink]="['/project']"><span class="navItemWhite">Project List</span></a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link" [routerLink]="['/messages']"><span class="navItemOrange">Messages</span></a>
+        </li>
+        <li class="nav-item avatar">
+          <a class="nav-link p-0" [routerLink]="['/user-profile']">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
+                 alt="avatar image" height="35">
+          </a>
+        </li>
+      </ul>
     </div>
   </nav>
 </header>
+
