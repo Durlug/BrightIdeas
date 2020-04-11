@@ -1,0 +1,17 @@
+body {
+}
+
+.orange {
+    color: darkorange;
+}
+
+.mainForm {
+    margin: 5px 20% 0 20%;
+}
+
+.registerButton {
+    margin-top: 5px;
+    width: 20%;
+    background-color: darkorange;
+    border: 2px solid darkorange;
+}
