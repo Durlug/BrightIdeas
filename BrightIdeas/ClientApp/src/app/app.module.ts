@@ -63,7 +63,7 @@ import { ReportDetailsUserComponent } from './report-details-user/report-details
       { path: 'user-profile', component: UserProfileComponent },
       { path: 'create-profile', component: CreateProfileComponent },
       { path: 'login', component: LoginComponent },
-      { path: 'password', component: UserPasswordComponent },
+      { path: 'user-password', component: UserPasswordComponent },
       { path: 'project', component: ProjectComponent },
       { path: 'admin-home', component: AdminHomeComponent},
       { path: 'pending-ideas', component: PendingIdeasComponent},
