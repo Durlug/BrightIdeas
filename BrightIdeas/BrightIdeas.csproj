@@ -13,7 +13,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Cors" Version="5.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,10 +36,42 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\create-idea\create-idea.component.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Chat.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Crediential.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Idea.ts" />
+    <None Remove="ClientApp\src\app\shared\models\IdeaFollower.ts" />
+    <None Remove="ClientApp\src\app\shared\models\IdeaReport.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Media.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Member.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Message.ts" />
+    <None Remove="ClientApp\src\app\shared\models\PasswordNames.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Posting.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Role.ts" />
+    <None Remove="ClientApp\src\app\shared\models\ToDo.ts" />
+    <None Remove="ClientApp\src\app\shared\models\Update.ts" />
+    <None Remove="ClientApp\src\app\shared\models\User.ts" />
+    <None Remove="ClientApp\src\app\shared\models\UserProfile.ts" />
+    <None Remove="ClientApp\src\app\shared\models\UserReport.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\create-idea\create-idea.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Chat.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Crediential.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Idea.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\IdeaFollower.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\IdeaReport.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Media.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Member.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Message.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\PasswordNames.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Posting.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Role.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\ToDo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\Update.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\User.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\UserProfile.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\models\UserReport.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
